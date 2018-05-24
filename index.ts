@@ -5,9 +5,9 @@ export default class LazyLoadSrc {
   private count = 0
 
   private items: NodeList
-  private max: number
+  private max: number = 0
 
-  public init() {
+  constructor() {
     this.items = document.querySelectorAll(this.DATA_ATTR)
     if (!this.items.length) return
 
@@ -25,7 +25,7 @@ export default class LazyLoadSrc {
   }
 
   private filterEmpty() {
-    const imgs = Array.from(this.items).filter((img: Element) => !!img.getAttribute(this.unbracket(this.DATA_ATTR)))
+    const imgs = Array.from(this.items).filter((img) => !!(img as HTMLElement).getAttribute(this.unbracket(this.DATA_ATTR)))
     this.max = imgs.length
   }
 
@@ -42,6 +42,7 @@ export default class LazyLoadSrc {
   private callNext() {
     const img = this.items[this.count] as HTMLElement
     const src = img.dataset.src
+    if (!src) return
     img.setAttribute('src', src)
   }
 }
