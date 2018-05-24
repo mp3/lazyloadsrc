@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mp3/lazyloadsrc/issues"
   },
-  "homepage": "https://github.com/mp3/lazyloadsrc#readme"
+  "homepage": "https://github.com/mp3/lazyloadsrc#readme",
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
 }
