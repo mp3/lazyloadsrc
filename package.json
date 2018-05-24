@@ -1,0 +1,19 @@
+{
+  "name": "lazyloadsrc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp3/lazyloadsrc.git"
+  },
+  "author": "Takehiko Itabashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mp3/lazyloadsrc/issues"
+  },
+  "homepage": "https://github.com/mp3/lazyloadsrc#readme"
+}
