@@ -40,9 +40,7 @@ export default class LazyLoadSrc {
   }
 
   private callNext() {
-    const img = this.items[this.count] as HTMLElement
-    const src = img.dataset.src
-    if (!src) return
-    img.setAttribute('src', src)
+    const img = this.items[this.count] as HTMLImageElement
+    img.src = img.dataset.src || ''
   }
 }
