@@ -36,10 +36,7 @@ var LazyLoadSrc = /** @class */ (function () {
     };
     LazyLoadSrc.prototype.callNext = function () {
         var img = this.items[this.count];
-        var src = img.dataset.src;
-        if (!src)
-            return;
-        img.setAttribute('src', src);
+        img.src = img.dataset.src || '';
     };
     return LazyLoadSrc;
 }());

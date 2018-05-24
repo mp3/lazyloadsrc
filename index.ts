@@ -3,9 +3,9 @@ export default class LazyLoadSrc {
   private readonly DATA_ATTR = '[data-src]'
 
   private count = 0
+  private max = 0
 
   private items: NodeList
-  private max: number = 0
 
   constructor() {
     this.items = document.querySelectorAll(this.DATA_ATTR)
