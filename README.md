@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/lazyloadsrc.svg)](https://badge.fury.io/js/lazyloadsrc)
+
 ## Installation
 
 ```
